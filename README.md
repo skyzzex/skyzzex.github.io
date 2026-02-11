@@ -1,0 +1,2 @@
+# skyzzex.github.io
+web
