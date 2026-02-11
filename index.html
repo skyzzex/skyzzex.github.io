@@ -2,66 +2,146 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<title>Название вашей студии</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SKYZZEX</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
-body {
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #000;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
     color: #fff;
-    text-align: center;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
 }
+
 header {
-    padding: 100px 20px;
+    padding: 60px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
-section {
-    padding: 60px 20px;
-}
-a {
+
+nav a {
     color: #fff;
     text-decoration: none;
-    border-bottom: 1px solid #fff;
-}
-footer {
-    padding: 40px;
+    margin-left: 30px;
     font-size: 14px;
+    opacity: 0.7;
+}
+
+nav a:hover {
+    opacity: 1;
+}
+
+.hero {
+    height: 80vh;
+    background: url('film1.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: flex-end;
+    padding: 60px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 300;
+}
+
+.section {
+    padding: 100px 60px;
+}
+
+.section h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
     opacity: 0.6;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.project img {
+    width: 100%;
+    display: block;
+}
+
+.project p {
+    margin-top: 15px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+footer {
+    padding: 60px;
+    font-size: 12px;
+    opacity: 0.4;
 }
 </style>
 </head>
+
 <body>
 
 <header>
-<h1>Название вашей студии</h1>
-<p>Мы создаём кино, которое остаётся.</p>
+<div class="logo">SKYZZEX</div>
+<nav>
+<a href="#projects">Projects</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
-<section>
-<h2>Проекты</h2>
-<p>Фильм 1 — короткий синопсис</p>
-    <img src="film1.jpg" width="80%">
-<p>Фильм 2 — короткий синопсис</p>
-</section>
+<div class="hero">
+<h1>We create cinema that lingers.</h1>
+</div>
 
-<section>
-<h2>Услуги</h2>
-<p>Полный цикл производства кино</p>
-<p>Продюсирование</p>
-<p>Постпродакшн</p>
-</section>
+<div class="section" id="projects">
+<h2>Projects</h2>
+<div class="projects">
 
-<section>
-<h2>Контакты</h2>
+<div class="project">
+<img src="film1.jpg">
+<p>Film Title — Short description of the project.</p>
+</div>
+
+<div class="project">
+<img src="film1.jpg">
+<p>Second Film — Short description.</p>
+</div>
+
+</div>
+</div>
+
+<div class="section" id="about">
+<h2>About</h2>
+<p style="max-width:600px; opacity:0.7;">
+Independent film production company focused on bold storytelling and strong visual language.
+</p>
+</div>
+
+<div class="section" id="contact">
+<h2>Contact</h2>
 <p>Email: your@email.com</p>
-</section>
+</div>
 
 <footer>
-© 2026 Название студии
+© 2026 SKYZZEX
 </footer>
 
 </body>
